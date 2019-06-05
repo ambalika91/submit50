@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OOPS - Polymorphism</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        
+	</head>
+	<body>
+        <div class="container">
+            <div class="row">
+		<div id = "header" class="col-12">
+        <h1>OBJECT ORIENTED PROGRAMMING</h1>
+        </div>
+        <div class="left_menu col-sm-4 col-12" >
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="object.html">Object</a></li>
+            <li><a href="encapsulation.html">Encapsulation</a></li>
+            <li><a href="inheritance.html">Inheritance</a></li>
+            <li><a href="polymorphism.html">Polymorphism</a></li>
+            <li><a href="ref.html">References</a></li>   
+        </ul>
+        </div>
+        
+        <div id="content" class="col-sm-8 col-12">
+          <h2>Polymorphism</h2>
+        <p>Polymorphism means "multiple forms". In OOP these multiple forms refer to multiple forms of the same method, where the exact same method name can be used in different classes, or the same method name can be used in the same class with slightly different paramaters. There are two forms of polymorphism, over-riding and over-loading.</p>
+            <h3>Over Riding</h3>
+        <p>
+            As discussed, a derived class inherits its methods from the base class. It may be necessary to redefine an inherited method to provide specific behaviour for a derived class - and so alter the implementation. So, over-riding is the term used to describe the situation where the same method name is called on two different objects and each object responds differently.
+            </p>
+        <p>
+            Over-riding allows different kinds of objects that share a common behaviour to be used in code that only requires that common behaviour.
+        </p>
+            <img src="src/overriding.jpg">
+            <h3>Overloading</h3>
+            <p>Over-Loading is the second form of polymorphism. The same method name can be used, but the number of parameters or the types of parameters can differ, allowing the correct method to be chosen by the compiler. For example</p>
+            <p>add (int , int y)</p>
+            <p>add (String x, String y)</p>
+            <p>are two different methods that have the same name and the same number of parameters. However, when we pass two String objects instead of two int variables then we expect different functionality. When we add two int values we expect an intresult - for example 6 + 7 = 13. However, if we passed two String objects we would expect a result of "6" + "7" = "67". In other words the strings should be concatenated.</p>
+        </div>
+       
+        
+        <div id="footer" class="col-12">&copy;ambalika2019</div>
+        </div>
+    </div>
+	</body>
+</html>
+
+
+
+
+
+
